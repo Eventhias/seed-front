@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Observable } from 'rxjs';
+import { AuthService } from '@auth0/auth0-angular';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,5 @@ import { Observable } from 'rxjs';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'seed-front';
 
-  ob!:Observable<boolean>
 }
